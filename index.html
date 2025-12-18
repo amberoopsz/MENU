@@ -3,97 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AX SHISHA | Menu</title>
+    <title>AX SHISHA | 店內菜單</title>
     <style>
         :root {
             --gold: #d4af37;
             --bg-dark: #121212;
             --card-bg: #1e1e1e;
-            --text-light: #e0e0e0;
+            --text-light: #f5f5f5;
         }
         body { 
-            font-family: "PingFang TC", "Heiti TC", sans-serif; 
+            font-family: "Microsoft JhengHei", "微軟正黑體", sans-serif; 
             margin: 0; 
             background-color: var(--bg-dark); 
             color: var(--text-light);
-            line-height: 1.6;
+            line-height: 1.8;
         }
-        .container { max-width: 500px; margin: auto; padding: 30px 20px; }
-        
-        /* Header Style */
-        .header { text-align: center; margin-bottom: 40px; }
-        .header h1 { color: var(--gold); letter-spacing: 4px; font-size: 2.2rem; margin-bottom: 5px; }
-        .header p { font-size: 0.9rem; opacity: 0.8; }
-
-        /* Category Style */
+        .container { max-width: 500px; margin: auto; padding: 40px 20px; }
+        .header { text-align: center; margin-bottom: 40px; border-bottom: 1px solid var(--gold); padding-bottom: 20px; }
+        .header h1 { color: var(--gold); font-size: 2.2rem; margin: 0; letter-spacing: 2px; }
         .category-title { 
-            border-left: 4px solid var(--gold); 
-            padding-left: 15px; 
-            margin: 30px 0 15px 0; 
-            color: var(--gold);
-            font-size: 1.4rem;
+            background-color: var(--gold);
+            color: #000;
+            padding: 5px 15px;
+            margin: 30px 0 15px 0;
+            font-weight: bold;
+            display: inline-block;
         }
-        
-        /* Menu Item Style */
         .item { 
-            background: var(--card-bg);
-            margin-bottom: 10px;
-            padding: 15px;
-            border-radius: 8px;
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            padding: 12px 0;
+            border-bottom: 1px solid #333;
         }
-        .item-name { font-size: 1.1rem; }
-        .item-price { color: var(--gold); font-weight: bold; font-family: 'Arial', sans-serif; }
-
-        /* Info Section */
-        .info-section { 
-            margin-top: 50px; 
-            padding: 20px; 
-            border-top: 1px solid #333; 
-            font-size: 0.85rem; 
-            text-align: center;
-            color: #999;
-        }
-        .info-section a { color: var(--gold); text-decoration: none; }
-        
-        .footer-note { font-size: 0.7rem; margin-top: 20px; opacity: 0.5; }
+        .item-price { color: var(--gold); font-weight: bold; }
+        .info { margin-top: 50px; text-align: center; font-size: 0.9rem; color: #888; }
+        .info p { margin: 5px 0; }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="header">
-            <h1>AX SHISHA</h1>
-            <p>SHISHA â¢ COCKTAIL â¢ SPIRITS</p>
-        </div>
-
-        <div class="category-title">ç¶å¸èª¿é Classic</div>
-        <div class="item"><span>Gin Tonic</span> <span class="item-price">$250</span></div>
-        <div class="item"><span>Long Island Iced Tea</span> <span class="item-price">$350</span></div>
-        <div class="item"><span>Old Fashioned</span> <span class="item-price">$300</span></div>
-        <div class="item"><span>Mojito</span> <span class="item-price">$300</span></div>
-
-        <div class="category-title">ç´é Gin</div>
-        <div class="item"><span>Hendrick's</span> <span class="item-price">$300</span></div>
-        <div class="item"><span>Roku Gin</span> <span class="item-price">$250</span></div>
-        <div class="item"><span>Tanqueray No. Ten</span> <span class="item-price">$280</span></div>
-
-        <div class="category-title">å¨å£«å¿ Whisky</div>
-        <div class="item"><span>Macallan 12Y</span> <span class="item-price">$350</span></div>
-        <div class="item"><span>Balvenie 12Y</span> <span class="item-price">$320</span></div>
-        <div class="item"><span>Hibiki Japanese Harmony</span> <span class="item-price">$450</span></div>
-
-        <div class="info-section">
-            <p>ð <a href="https://www.google.com/maps/search/?api=1&query=é«éå¸æ¥ æ¢åæ æ°è·¯273è" target="_blank">é«éå¸æ¥ æ¢åæ æ°è·¯273è</a></p>
-            <p>ð <a href="tel:0988850431">0988-850-431</a></p>
-            <p>ð çæ¥­æéï¼19:00 - 02:00 (é±ä¸è³é±æ¥)</p>
-            
-            <div class="footer-note">æªæ»¿åå«æ­²è«å¿é£²éãç¦æ­¢éé§ã</div>
-        </div>
+<div class="container">
+    <div class="header">
+        <h1>AX SHISHA</h1>
+        <div style="color: var(--gold); font-size: 0.8rem; letter-spacing: 5px; margin-top: 5px;">水菸 • 調酒 • 威士忌</div>
     </div>
+
+    <div class="category-title">經典調酒</div>
+    <div class="item"><span>琴湯尼 Gin Tonic</span> <span class="item-price">$250</span></div>
+    <div class="item"><span>長島冰茶 Long Island</span> <span class="item-price">$350</span></div>
+    <div class="item"><span>經典莫西多 Mojito</span> <span class="item-price">$300</span></div>
+
+    <div class="category-title">精選琴酒</div>
+    <div class="item"><span>亨利爵士 Hendrick's</span> <span class="item-price">$300</span></div>
+    <div class="item"><span>六琴酒 Roku Gin</span> <span class="item-price">$250</span></div>
+
+    <div class="category-title">威士忌</div>
+    <div class="item"><span>麥卡倫 12年</span> <span class="item-price">$350</span></div>
+    <div class="item"><span>百富 12年</span> <span class="item-price">$320</span></div>
+
+    <div class="info">
+        <p>📍 高雄市楠梓區惠民路273號</p>
+        <p>📞 0988-850-431</p>
+        <p>🕒 19:00 - 02:00 (週一至週日)</p>
+        <p style="margin-top: 20px; font-size: 0.7rem;">未滿18歲請勿飲酒 • 禁止酒駕</p>
+    </div>
+</div>
 
 </body>
 </html>
